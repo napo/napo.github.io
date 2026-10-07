@@ -1,0 +1,35 @@
+---
+layout: post
+title: "kickoff \"quick&dirty\"per gli open government data"
+date: "2011-09-26 17:00:49"
+permalink: "/kickoff-quick-dirty-open-government-data/"
+original_url: "https://de.straba.us/kickoff-quick-dirty-open-government-data/"
+render_with_liquid: false
+categories:
+  - "okfn"
+  - "opendata"
+tags:
+  - "consigli"
+  - "howto"
+  - "kickoff"
+  - "opendata"
+---
+
+<img class="size-medium wp-image-1024 alignnone" title="kick off" src="/assets/images/wordpress/2011/09/fkickoffodata-300x115.png" alt="" width="300" height="115" />
+
+Molto spesso mi si chiede una strategia per cominciare ad avviare (= kick-off) un processo di interesse da parte della p.a. verso gli open data.
+Queste considerazioni - personali - vengono dal confronto con due dei protagonisti della fantastica storia del <a href="http://dati.piemonte.it">portale dei dati del Piemonte</a>, <a href="http://www.federicomorando.net/">Federico Morando</a> e <a href="http://it.linkedin.com/in/lorenzobenussi">Lorenzo Benussi</a>, i miei rapporti con OKFN (da <a href="http://okfn.org/members/steko/">Stefano Costa</a> a <a href="http://rufuspollock.org/">Rufus Pollock</a>), con altri esponenti del mondo opendata italiano e dalla lettura/traduzione dell' <a href="http://www.opendatamanual.org/it">open data manual</a>.
+Resta il fatto che il compito di decidere l'apertura dei dati deve venire da chi ha la leadership per farlo (il politico o il dirigente pubblico), ma possiamo comunque aiutare ad innescare il processo.
+
+
+<ul>
+        <li><strong>Devi aver chiaro il concetto di open data</strong><br/>In questo blog se ne è parlato con il post <a href="http://de.straba.us/2011/09/01/ma-cosa-vuol-dire-open-data/">"Ma  cosa vuol dire open data"</a>, l'importante è aver chiaro che open data vuol dire permette di utilizzare i dati a qualsiasi scopo, quanto scritto nella open knowledge definition è molto preciso.</li>
+	<li><strong>non dimenticare il motto "RAW DATA NOW"</strong> ("<em>Dateci i vostri dati così come sono. Ora!</em>")<br/>Se si vuole cominciare è meglio pensare in un secondo momento alle questioni legate ai formati, ai metadati, alle verifiche di qualità ecc... concentra di più le tue energie affinché il dato, nella forma con cui la p.a. è solita utilizzarlo, sia disponibile per qualsiasi scopo. Ottenere questo è già una grande vittoria.</li>
+	<li><strong>quando trovi dati pubblici segnalali su <a href="http://it.ckan.net">it.ckan.net</a></strong><br/>Dato pubblico non vuol dire open data, vuol dire solo che il dato è esposto online. Il sito it.ckan.net è il nodo italiano di <a href="http://www.thedatahub.org">the data hub</a>. Qualsiasi dato segnalato su quel sito può essere poi facilmente trovato da chiunque grazie a tool come <a href="http://packages.python.org/datapkg/">datapkg</a> o siti come <a href="http://publicdata.eu">publicdata.eu</a>. Non preoccuparti della licenza, non violerai nulla. Una volta registrati al sito potrai riempire una form con le informazioni del link diretto del download (importante) del dataset, il tipo di formato, il tipo di licenza, tag descrittivi ... Questo sarà di grande effetto quando poi lo presenterai a chi dovrà prendere le decisioni. Molti sono gli uffici della pubblica amministrazione che pubblicano dati (anche se con informazioni assenti o poco chiare).</li>
+	<li><strong>parla con quelli che hanno già dati online</strong>.<br/>non pensare ai dati che TU vorresti vedere disponibili, sta lontano da uffici che pubblicano dati a pagamento, sta lontano da chi non pubblica dati e dai dati protetti da privacy, segreto militare, segreto statistico, flora e fauna protetta. Comincia a dialogare con chi già espone dati. Come consiglio comincia a visitare le pagine degli uffici statistici, troverai sicuramente qualche dataset (ci sono delle norme che propongono che i dati statistici siano resi pubblici). Guarda poi la relazione in altri progetti, ad esempio verifica quali uffici cartografici hanno <a href="http://wiki.openstreetmap.org/wiki/IT:Potenziali_fonti_di_dati">autorizzato l'importazione di dati in openstreetmap</a> (portare i dati in openstreetmap deve essere una conseguenza nell'aprire i dati, e non il fine).</li>
+	<li><strong>non proporre licenze complesse</strong><br/>La prima tendenza è quella di scriversi licenze "ad hoc". Questo è un approccio poco furbo: se i dati sono su Internet sono potenzialmente accessibili da tutti, usare modelli internazionali e condivisi è sicuramente più vincente. Non puoi sapere a priori cosa accadrà a quei dati. La tendenza poi è quella di utilizzare licenze simili a quelle del software libero, quelle con le formule "share a like", ovvero, condividi allo stesso modo (es <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC-BY-SA</a>, <a href="http://opendatacommons.org/licenses/odbl/">ODbL</a>, <a href="http://www.formez.it/iodl/">IODL</a>). Non dimenticare però che i dati non sono il software. Queste licenze vanno bene per proteggere la comunità che crea i dati (esempio OpenStretMap) o se si vuole cercare di frenare la crescita di aziende che su alcune tipologie di dati potrebbero rafforzarsi. Quando ti imbatti in dataset già disponibili online e vuoi aiutare a fare open data, tieni presente che sono lì da molto tempo e che, il senso comune, è di considerarli di pubblico dominio. Vedilo pertanto come un sanare una situazione portando il valore aggiunto dell'open data. Proponi una licenza di pubblico dominio (es. la <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0</a> - quella usata dal portale dei <a href="http://dati.piemonte.it">dati del Piemonte</a>). Ricorda che . Ricorda che questa licenza, se ben presentata, può piacere alla P.A. in quanto la deresponsabilizza di eventuali rielaborazioni sbagliate fatte da terzi.</li>
+	<li><strong>analizza la realtà dei fatti</strong><br/>la regola del buon senso è quella che risolve sempre tutti i problemi. Se un dato non ha ragione di essere segretato e non presenta problemi, proponi di esporlo. Analizza con i tecnici dell'ufficio la reale situazione fra costi e benefici. Quando un utente chiede un dato, il processo per estrapolarlo per poi distribuirlo può essere un costo che non giustifica il beneficio. Così come chiedi sempre a chi i dati sono stati rivolti, quale la prassi e nuovamente quali i costi e benefici, e quali le discriminazione (es. gratuito per studente, ma non per professionisti. E dopo che lo studente si è appena laureato?). Se invece il problema è tecnico, come, ad esempio, il fatto che sono rappresentati in una pagina html o in pdf, chiedi di far applicare una licenza aperta, in modo che poi chiunque possa utilizzarlo ed eventualmente favorire lo sviluppo di scraper (= software che leggono il contenuto e poi creano un dataset)</li>
+	<li><strong>documentati</strong><br/>Il tema open data è caldissimo, ogni giorno ci sono notizie, la rete è piena. Leggi, impara, entra nella comunità e riporta gli esempi diffondendoli.</li>
+</ul>
+
+... si tratta solo di consigli, ma può essere un buon punto di partenza anche se "quick&dirty"

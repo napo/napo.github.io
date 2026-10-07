@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <a class="footer-brand" href="{{ '/' | relative_url }}">napo</a>
+  <p>{% if page.lang == 'en' %}Ideas, maps and open data.{% else %}Idee, mappe e dati aperti.{% endif %}</p>
+  <div class="footer-links">{% include social-links.html %}</div>
+  <div class="license-note">
+    <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">
+      <img src="https://licensebuttons.net/l/by/4.0/88x31.png" alt="Creative Commons Attribution 4.0 International">
+    </a>
+    <p>{% if page.lang == 'en' %}All content on this site is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> license.{% else %}Tutti i contenuti di questo sito sono rilasciati con licenza <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</a>.{% endif %}</p>
+  </div>
+  <small>&copy; {{ site.time | date: "%Y" }} napo</small>
+</footer>

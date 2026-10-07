@@ -1,0 +1,24 @@
+<aside class="sidebar" aria-label="{% if page.lang == 'en' %}Article categories{% else %}Categorie degli articoli{% endif %}">
+  <p class="eyebrow">{% if page.lang == 'en' %}Explore{% else %}Esplora{% endif %}</p>
+  <h2>{% if page.lang == 'en' %}Topics{% else %}Argomenti{% endif %}</h2>
+  {% assign categories = site.categories | sort %}
+  {% if categories.size > 0 %}
+    <p class="cloud-label">{% if page.lang == 'en' %}Categories{% else %}Categorie{% endif %}</p>
+    <ul class="topic-cloud">
+      {% for category in categories %}
+        {% assign frequency = category[1].size %}
+        {% assign scale = 1 %}
+        {% if frequency > 2 %}{% assign scale = 2 %}{% endif %}
+        {% if frequency > 5 %}{% assign scale = 3 %}{% endif %}
+        {% if frequency > 12 %}{% assign scale = 4 %}{% endif %}
+        {% if frequency > 25 %}{% assign scale = 5 %}{% endif %}
+        {% if page.lang == 'en' %}
+          <li><a class="cloud-size-{{ scale }}" href="{{ '/en/topics/' | relative_url }}#category-{{ category[0] | slugify }}" title="{{ frequency }} articles">{{ category[0] | escape }}</a></li>
+        {% else %}
+          <li><a class="cloud-size-{{ scale }}" href="{{ '/tag/' | relative_url }}#category-{{ category[0] | slugify }}" title="{{ frequency }} articoli">{{ category[0] | escape }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+  <a class="all-topics-link" href="{% if page.lang == 'en' %}{{ '/en/topics/' | relative_url }}{% else %}{{ '/tag/' | relative_url }}{% endif %}">{% if page.lang == 'en' %}Browse all tags →{% else %}Vedi tutti i tag →{% endif %}</a>
+</aside>

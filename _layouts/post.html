@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<article class="post">
+  <p class="eyebrow"><a href="{{ '/' | relative_url }}#articoli">← Tutti gli articoli</a></p>
+  <h1>{{ page.title }}</h1>
+  <div class="post-meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d/%m/%Y" }}</time>
+    {% if page.original_url contains "medium.com" %}
+      · <a href="{{ page.original_url }}">Versione originale su Medium</a>
+    {% endif %}
+  </div>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>

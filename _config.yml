@@ -1,0 +1,28 @@
+title: "Napo"
+email: ""
+description: "Mappe, dati, sport, software libero e idee: uno spazio di napo."
+baseurl: "" # il sottodominio del tuo sito, per esempio /blog
+url: "https://napo.github.io"
+github_username: napo
+lang: it
+markdown: kramdown
+theme: minima
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - about.md
+  - cookie-policy.md
+  - medium-export-c0d3dc8cd6095400fa035a7a78550fe2cebb7e9fe0ee7e44e6d2daadc055d531.zip
+
+permalink: /:title/

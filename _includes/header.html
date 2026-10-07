@@ -1,0 +1,23 @@
+<header class="site-header">
+  <a class="site-title" href="{{ '/' | relative_url }}" aria-label="napo">napo</a>
+  <nav aria-label="{% if page.lang == 'en' %}Main navigation{% else %}Navigazione principale{% endif %}">
+    {% if page.lang == "en" %}
+      <a href="{{ '/en/' | relative_url }}#articles">Articles</a>
+      <a href="{{ '/en/topics/' | relative_url }}">Topics</a>
+    {% else %}
+      <a href="{{ '/' | relative_url }}#articoli">Articoli</a>
+      <a href="{{ '/tag/' | relative_url }}">Argomenti</a>
+    {% endif %}
+    <span class="language-switch" aria-label="{% if page.lang == 'en' %}Change language{% else %}Cambia lingua{% endif %}">
+      {% if page.lang == "en" %}
+        <a href="{{ '/' | relative_url }}" lang="it" hreflang="it">IT</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page" lang="en">EN</span>
+      {% else %}
+        <span aria-current="page" lang="it">IT</span>
+        <span aria-hidden="true">/</span>
+        <a href="{{ '/en/' | relative_url }}" lang="en" hreflang="en">EN</a>
+      {% endif %}
+    </span>
+  </nav>
+</header>
